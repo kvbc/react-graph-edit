@@ -14,4 +14,5 @@
 - Make PointPosition use the correct Y sign
 - Create a help menu
 - Fix grid drawing order
+- Improve drawing performance
 - [?] Create a hook that acts as middleware for the useState() hook
