@@ -5,3 +5,5 @@ Technologies used:
 - TypeScript
 - Sass
 - Vite
+
+![](preview.gif)
