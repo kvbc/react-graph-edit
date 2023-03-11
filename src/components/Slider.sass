@@ -1,0 +1,66 @@
+$slider-border-radius: 10px
+$slider-handle-border-radius: 10px
+$slider-handle-color: #ccc
+
+.Slider__value
+    max-width: 50px
+    border: transparent
+    text-align: center
+    background-color: #222
+    border-radius: 25px
+    color: white
+    padding: 0 5px
+    min-height: 25px
+    
+    &[type="number"]
+        -moz-appearance: textfield
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+
+.Slider__valueSuffix
+    color: lightgray
+    min-width: 30px
+    margin-left: 5px
+
+.Slider__max
+    min-width: 20px
+
+.Slider__content
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #ccc
+    min-width: 50px
+    border-right: 3px solid #555
+    margin-right: 5px
+
+    svg
+        font-size: 150%
+
+.Slider__slider
+    border-radius: $slider-border-radius
+    min-width: 100px
+    margin: 0 15px
+    background-color: #555
+    position: relative
+    outline: 10px solid rgba(0, 0, 0, 0.15)
+    height: 15px
+
+.Slider__slider__fill
+    border-top-left-radius: $slider-border-radius
+    border-bottom-left-radius: $slider-border-radius
+    inset: 0
+    width: 0
+    position: absolute
+    background-color: #ccc
+
+.Slider__slider__handle
+    border-radius: $slider-handle-border-radius
+    inset: 0
+    position: absolute
+    background-color: $slider-handle-color
+    width: 3px
+    outline: 3px solid $slider-handle-color

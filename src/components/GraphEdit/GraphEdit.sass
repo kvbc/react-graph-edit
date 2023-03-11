@@ -1,0 +1,70 @@
+$settings-offset: 10px
+
+.GraphEdit
+    position: relative
+    overflow: hidden
+    border: 5px solid black
+    width: fit-content
+
+.GraphEdit__settings__topbar
+    inset: 0
+    width: 100%
+    position: absolute
+    height: 100px
+    transform: translateY(-55%)
+    pointer-events: none
+    transition: transform 500ms
+
+    button
+        position: absolute
+        left: $settings-offset + 60
+        padding: 10px
+        font-size: 2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: red
+        border-radius: 50px
+        border: transparent
+        color: white
+        cursor: pointer
+        pointer-events: auto
+
+    &.GraphEdit__settings__topbar--expanded
+        transform: translateY($settings-offset)
+
+.GraphEdit__expand
+    position: absolute
+    padding: 10px
+    background-color: #333
+    left: $settings-offset
+    top: $settings-offset
+    color: white
+    font-size: 1.5rem
+    border-radius: 50px
+    
+    transition: font-size 500ms, rotate 500ms
+
+    &:hover
+        font-size: 2rem
+        cursor: pointer
+
+    &.GraphEdit__expand--expanded
+        font-size: 2rem
+        rotate: 180deg
+
+.GraphEdit__settings
+    position: absolute
+    display: flex
+    flex-direction: column
+    gap: 7px
+    top: 70px
+    transform: translateX(-105%)
+
+    transition: transform 500ms
+
+    &.GraphEdit__settings--expanded
+        transform: translateX($settings-offset)
+
+    > .Row
+        min-height: 150px
