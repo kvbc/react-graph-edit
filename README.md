@@ -6,4 +6,4 @@ Technologies used:
 - Sass
 - Vite
 
-![](preview.gif)
+![](./preview.gif)
