@@ -9,6 +9,7 @@
 - TypeScript
 - Sass
 - Vite
+- Polynomial regression
 
 # TODO
 - Clean up the polynomial regression code
